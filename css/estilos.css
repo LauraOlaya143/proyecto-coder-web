@@ -160,19 +160,6 @@ div h3 {
     line-height: 1.5em;
 }
 
-.parrafo__3 {
-    width: 600px;
-    margin: 0 auto;
-    margin: 50px;
-    margin-bottom: 0 auto;
-    font-size: 2rem;
-    text-align: justify;
-    line-height: 1.2em;
-    animation-duration: 3s;
-    animation-name: titulo;
-    animation-iteration-count: 1;
-}
-
 .main__img {
     width: 750px;
     margin: 0 auto;
@@ -188,6 +175,14 @@ div h3 {
     
 }
 
+.titulo__mobile {
+    color:rgb(255, 211, 229);
+}
+
+.titulo__oculto {
+    display: none;
+}
+
 
 .cajaTexto {
     display: flex;
@@ -195,18 +190,23 @@ div h3 {
     max-width: 1200px;
     height: 350px;
     padding: 30px;
-    margin: 50px;
+    margin: 30px;
 }
 
 .cajaTexto__img {
+    width: 100%;
     margin: 0 auto;
     border-radius: 40px;
- 
+}
+
+.cajaTexto__img2 {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 40px;
 }
 
 .cajaTexto__img--2 {
     height: 270px;
-    
 }
 
 .cajaImg {
@@ -217,8 +217,9 @@ div h3 {
     
 }
 
-.cajaImg__seis {
+.cajaImg2 {
     width: 350px;
+    margin: 10px;
 }
 
 .links {
@@ -238,7 +239,7 @@ div h3 {
 .separador--2 {
     margin: 30px;
     padding: 35px;
-    background-color: rgba(255, 140, 188, 0.123);
+
 }
 
 .separador__2 {
@@ -362,6 +363,15 @@ div h3 {
     max-width:1024px;
 }
 
+.caja2 {
+    background-color: rgba(255, 140, 188, 0.123);
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 1rem;
+    max-width:1024px;
+}
 .cajaGrid {
     display:grid;
     grid-template-areas: 
@@ -370,7 +380,8 @@ div h3 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 500px);
     margin: 0 auto;
-}    
+}   
+
 
 .grid > * {
     border:rgb(252, 142, 184) 1px solid;
@@ -413,6 +424,45 @@ div#fototres {
 
 div#fotocuatro {
     grid-area: foto4;
+}
+
+.cajaGrid2 {
+    display:grid;
+    grid-template-areas: 
+      "titulo1 titulo2"
+      "logo firma";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 400px;
+    margin: 20px;
+}
+
+div#titulo1 {
+    grid-area: titulo1;
+}
+
+div#titulo2 {
+    grid-area: titulo2;
+}
+
+div#logo {
+    grid-area: logo;
+    padding-right: 200px;
+}
+
+div#firma {
+    grid-area: firma;
+    padding-right: 200px;
+}
+
+.cajagrid__items2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.cajagrid__img3 {
+    width: 80%;
 }
 
 .footer {
@@ -464,7 +514,6 @@ div#fotocuatro {
     h2 { 
         height: 30px;
         width: 600px;
-        
     }
 
     h1 {
@@ -473,8 +522,7 @@ div#fotocuatro {
         padding-bottom: 6rem;
         padding-top: 1rem;
         font-size: 6em;
-        
-
+    
     }
 
     div h3 {
@@ -516,6 +564,8 @@ div#fotocuatro {
         transition: transform 0.5s;
         z-index: 100;
         justify-content: space-evenly;
+        border:rgb(177, 51, 110) 3px solid;
+        border-radius: 20px;
     }
 
     #sidebar:target {
@@ -528,7 +578,7 @@ div#fotocuatro {
         background-color: rgb(26, 25, 25);
         font-size: 1.2rem;
         border-radius: 3px;
-        padding: 0.5rem 1rem;
+        padding: 0.4rem 0.8rem;
         display: inline-block;
     }
 
@@ -554,92 +604,107 @@ div#fotocuatro {
 
     .main__contenedor {
         flex-direction: column;
-        
-    }
-
-    .parrafo {
-        width: 620px;
-        margin: 0 auto;
-        font-size: 1.5em;
-        text-align: justify;
-        line-height: 1.2em;
-        
-    }
-
-    .parrafo__3 {
-        padding-top: px;
     }
 
     .main__img {
-        width: 500px;
-        margin: 0 auto;
-        border-radius: 40px;
-        
-    }
-
-    .main__img--2 {
-        width: 500px;
-        padding-left: 0px;
-        padding-right: 100px;
-        border-radius: 40px;
-    }
-
-    .separador--2 {
-        margin-top: 120px;
-        padding: 4px;
-    }
-
-    .cajaImg {
-        flex-wrap: wrap;
-        width: 649px;
-    
-    }
-
-    .cajaImg__seis {
         width: 600px;
+        border-radius: 40px;
     }
-    
+
+    .caja2 {
+        margin-top: 120px;
+        margin-bottom: 20px;
+        padding: 1rem;
+        max-width:600px;
+    }
+
     .multimedia {
-        flex-direction: row;
-        margin: auto;
-        padding: 30px;
-        margin-top: 80px;
-    }
-
-    .multimedia__separador {
-        width: 300px;
-    }
-
-    .formulario__caja {
-        margin: 7px;
-        padding: 5px;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-    }
-
-    .boton {
-        margin: 45px;
+        width: 700px;
+        padding: 1px;
+        padding-top: 30px;
     }
 
     .caja {
-        margin-top: 120px;
-        max-width: 650px;
+        border-radius: 6px;
+        margin: 0 auto;
+        margin-top: 110px;
+        margin-bottom: 20px;
+        padding: 1rem;
+        max-width:600px;
     }
 
+    .caja2 {
+        border-radius: 6px;
+        margin: 0 auto;
+        margin-top: 110px;
+        margin-bottom: 20px;
+        padding: 1rem;
+        max-width:600px;
+        height: 800px;
+    }
+
+    .cajaImg2 {
+        margin-left: 120px;
+    }
+
+    .cajaGrid {
+        grid-template-areas: 
+          "foto1"
+          "foto2"
+          "foto3"
+          "foto4";
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 550px);
+        margin: 0 auto;
+    }   
+
     .cajagrid__items {
-        margin: 7px;
-        padding: 5px;
+        margin: 1px;
+        padding: 1px;
         display: flex;
         justify-content:center;
         align-items: center;
     }
-    
+
     .cajagrid__img {
-        width: 100%;
-        height: 70%;
-        border-radius: 30px;
+        width: 80%;
     }
+
+    .cajagrid__img--2 {
+        width: 60%;
+        height: 80%
+    }
+
+    .cajaTexto {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 10px;
+        height: 0 auto;
+        padding: 3px;
+        margin: 3px;
+    }
+
+    .parrafo__2 {
+        width: 540px;
+        margin: 0 auto;
+        margin-left: 30px;
+        text-align: justify;
+        line-height: 1.5em;
+    }
+
+    .titulo__oculto {
+        display: block;
+    }
+
+    .ocultarMobile {
+        display: none;
+    }
+
+    .cajaGrid2 {
+        display: none;
+    }
+
 
     .footer__contenedor {
         max-width: 1200px;
@@ -672,23 +737,25 @@ div#fotocuatro {
 @media screen and (max-width: 600px) {
     
     h1 {
-        font-size: 53px;
+        font-size: 40px;
         width: 100%;
+        margin: 0 auto;
         padding-bottom: 10px;
     }
 
     h2 {
-        font-size: 35px;
+        font-size: 30px;
+        margin: 0 auto;
         width: 90%;
-        padding-bottom: 3rem;
+        padding-bottom: 2rem;
     }
 
     div h2 {
-        width: 300px;
+        width: 230px;
     }
 
     div h3 {
-        width: 300px;
+        width: 270px;
     }
     
     .header {
@@ -701,104 +768,48 @@ div#fotocuatro {
         
     }
 
-    .main__contenedor {
-        max-width: 400px;
+    .nav__lista {
+        max-width: 220px;
     }
 
+    .separador__titulo {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
 
     .parrafo {
-        width: 300px;
+        margin-top: 30px;
         font-size: 20px;
-        padding-top: 4rem;
-    }
-
-    .parrafo__3 {
-       width: 250px;
-       margin: 0 auto;
-       margin-left: 250px;
-       text-align: justify;
-    }
-
-    .titulo {
-        max-width: 600px;
-        margin-left: 460px;
-        text-align: center;
-        font-size: 3em;
-        line-height: 1.2em;
-        width: 100%;
-        height: 2px;
-        padding-left: 2rem;
-        margin-top: 2rem;
-        margin-bottom: 80px;
+        width: 240px
     }
 
     .main__img {
-        width: 300px;
-    }
-
-    .main__img--2 {
-        margin: 0 auto;
-        margin-left: 380px;
-        
+        width: 250px;
     }
 
     .multimedia {
-        flex-direction: column;
-        margin: auto;
-        width: 100px;
-        padding: 30px;
-        margin-top: 90px;
-        margin-right: 50px;
-    }
-
-    .separador--2 {
-        margin-top: 130px;
-        padding: 10px;
-        padding-right: 600px;
-    }
-
-    .cajaImg {
-        flex-wrap: wrap;
-        width: 600px;
-
-    
-    }
-
-    .cajaImg__seis {
-        width: 600px;
-    }
-
-    .multimedia {
-        width: 625px;
+        width: 280px;
+        padding-top: 50px;
         margin: 0 auto;
-        margin-top: 80px;
+        justify-content:center;
     }
 
     .multimedia__separador {
-        margin: 10px;
         align-items: center;
     }
 
-    
-    .formulario__caja {
-        max-width: 400px;
-    }
-
-    .formulario__caja--2 {
-        margin-left: 100px;
-
-    }
-
-    .formulario__img {
-        width:600px;
-    }
-
-    .boton {
-        margin: 30px;
-    }
-
     .caja {
-        max-width: 320px;
+        border-radius: 6px;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        max-width: 250px;
+    }
+    
+    .caja2 {
+        max-width: 250px;
+        margin-top: 120px;
     }
 
     .cajaGrid {
@@ -808,17 +819,52 @@ div#fotocuatro {
           "foto3"
           "foto4";
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 500px);
+        grid-template-rows: repeat(4, 300px);
         margin: 0 auto;
-    }    
-    
+    }   
 
     .cajagrid__items {
-        margin: 0px;
+        margin: 1px;
         padding: 1px;
         display: flex;
         justify-content:center;
         align-items: center;
+    }
+
+    .cajagrid__img {
+        width: 100%;
+        
+    }
+
+    .cajagrid__img--2 {
+        width: 80%;
+        height: 0 auto;
+    }
+
+    .formulario__caja {
+        width: 280px;
+        padding-left: 20px;
+    }
+
+    .formulario__img {
+        display: none;
+    }
+
+    .boton {
+        margin: 18px;
+        width: 100px;
+        height: 45px;
+    }
+
+    .cajaImg2 {
+        margin-left: 20px;
+        width: 200px;
+    }
+
+    .parrafo__2 {
+        width: 230px;
+        margin-left: 1px;
+        font-size: 15px;
     }
 
     .footer {
