@@ -14,34 +14,49 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--bs-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!--Hoja de estilos propia-->
     <link rel="stylesheet" href="../css/estilos.css">
     
 </head>
 <body>
   <header class="header">   
-    <div class="header__contenedor">
-       <div class="header__marca">
-         <img src="../imagenes/logo.png" alt="Logo" class="header__marcaImg"/>
-       </div>   
-       <nav>
-            <a class="nav__enlace--sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
-            <ul class="nav__lista" id="sidebar">
-             <li><a class="nav__enlace" href="../index.html">Inicio</a></li>
-             <li><a class="nav__enlace" href="integrantes.html">Integrantes</a></li>
-             <li><a class="nav__enlace" href="discografia.html">Discografia</a></li>
-             <li><a class="nav__enlace" href="galeria.html">Galeria</a></li>
-             <li><a class="nav__enlace" href="contacto.html">Contacto</a></li>
-             <li><a class="nav__enlaceoculto" href="#"><i class="fas fa-times-circle"></i></a></li>
-            </ul>
-       </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header">
+      <div class="container-fluid">
+        <div class="header__marca">
+          <img src="../imagenes/logo.png" alt="Logo" class="header__marcaImg"/>
+        </div>
+        <button class="nav__enlace--sidebar navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav__enlace active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav__enlace active" aria-current="page" href="integrantes.html">Integrantes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav__enlace active" aria-current="page" href="discografia.html">Discografia</a></li>
+            </li>
+            <li class="nav-item">
+              <a class="nav__enlace active" aria-current="page" href="galeria.html">Galeria</a></li>
+            </li>
+            <li class="nav-item">
+              <a class="nav__enlace active" aria-current="page" href="contacto.html">Contacto</a></li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
    
   <main>
     <div >
-      <h1>INTEGRANTES</h1>
-      <h2>Este grupo esta integrado por 4 chicas, Jennie, Lisa, Jisoo y Rose</h2>
+      <h1 class="titulo">INTEGRANTES</h1>
+      <h2 class="titulo2">Este grupo esta integrado por 4 chicas, Jennie, Lisa, Jisoo y Rose</h2>
     </div>
 
     <section class="caja2" data-aos="fade-up"
@@ -51,12 +66,12 @@
           <img class="cajaTexto__img" src="../imagenes/jennieperfile.jpg" alt="Jennie photo">
         </div>
         <div class="titulo__oculto">
-          <h2>Jennie</h2>
+          <h2 class="titulo2">Jennie</h2>
         </div>
 
         <div class="parrafo__2">
           <div class="ocultarMobile">
-            <h2>Jennie</h2>
+            <h2 class="titulo2">Jennie</h2>
           </div>
           <p>Es cantante, rapera y bailarina de origen surcoreano, nacio el 16 de enero de 1996 (actualmente teniendo 26 años) ademas que a parte de ser vocalista y rapera en su grupo, ha tenido gran influencia en el mundo de la moda, como se ve al ser una imagen iconica de <strong>CHANEL</strong> Ella fue el primer miembro que presento YG durante el anuncio de su nuevo grupo femenino y la primera en debutar como solista el 12 de noviembre del 2018 con su cancion <a class="links" target="_blank" href="https://www.youtube.com/watch?v=b73BI9eUkjM">Solo</a></p>
         </div>
@@ -88,12 +103,12 @@
             </div>
 
             <div class="titulo__oculto">
-              <h2>Lisa</h2>
+              <h2 class="titulo2">Lisa</h2>
             </div>
     
             <div class="parrafo__2">
               <div class="ocultarMobile">
-                <h2>Lisa</h2>
+                <h2 class="titulo2">Lisa</h2>
               </div>
                 <p>Es una rapera, bailarina, modelo y cantante tailandesa (la unica del grupo con dicha nacionalidad) nacio el 27 de marzo de 1997 (actualmente teniendo 24 años) tiene la capacidad hablar ingles, chino, tailandes y coreano, tambien es conocida por ser la artista del KPOP con mas seguidores en Corea del Sur y su pais nativo, Tailandia y ser embajadora de la marca <strong>CELINE</strong>. Ella fue la segunda integrante que presento YG y fue la tercer en debutar como solista el 10 de septiembre con su album LALISA, con dos canciones: <a class="links" target="_blank" href="https://www.youtube.com/watch?v=awkkyBH2zEo">Lalisa</a> y <a class="links" target="_blank" href="https://www.youtube.com/watch?v=dNCWe_6HAM8">Money</a></p>
               </div>
@@ -129,12 +144,12 @@
             </div>
 
             <div class="titulo__oculto">
-              <h2>Jisoo</h2>
+              <h2 class="titulo2">Jisoo</h2>
             </div>
     
             <div class="parrafo__2">
               <div class="ocultarMobile">
-                <h2>Jisoo</h2>
+                <h2 class="titulo2">Jisoo</h2>
               </div>
                 <p>Es una cantante, actriz, modelo y presentadora surcoreana, nacida el 3 de enero de 1995 (actualmente con 27 años) quien principalmente se ha destacado al ser el rostro de muchas marcas famosas como se puede ver al ser embajadora de <strong>DIOR</strong>. Ella fue la tercera miembro en ser presentada por YG y a pesar de aun no debutar en solitario, si debuto como actriz en el KDrama <a class="links" target="_blank" href="https://es.wikipedia.org/wiki/Snowdrop">Snowdrop</a></p>
               </div>
@@ -142,7 +157,7 @@
           </div>
 
           <div>
-            <div class="cajaGrid2">
+            <div class="cajaGrid2 cajaGrid2--2">
               <div id="titulo1">
                 <h3>Logo</h3>
               </div>
@@ -170,12 +185,12 @@
             </div>
 
             <div class="titulo__oculto">
-              <h2>Rose</h2>
+              <h2 class="titulo2">Rose</h2>
             </div>
     
             <div class="parrafo__2">
               <div class="ocultarMobile">
-                <h2>Rose</h2>
+                <h2 class="titulo2">Rose</h2>
               </div>
                 <p>Tambien conocida como Roseanne Park, es una cantante, compositora, bailarina y modelo neozelandesa la cual nacio el 11 de febrero de 1997 (actualmente con 25 años) tambien es una destacada embajadora de <strong>YSL Beauty</strong>. Ella fue la ultima integrante del grupo en ser presentada por YG y fue la segunda en debutar en solitario con su album <strong>-R-</strong> el cual contenia dos canciones: <a class="links" target="_blank" href="https://www.youtube.com/watch?v=CKZvWhCqx1s">On The Ground</a> y <a class="links" target="_blank" href="https://www.youtube.com/watch?v=K9_VFxzCuQ0">Gone.</a></p>
               </div>
@@ -237,5 +252,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

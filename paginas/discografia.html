@@ -14,35 +14,50 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--bs-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!--Hoja de estilos propia-->
     <link rel="stylesheet" href="../css/estilos.css">
   </head>
   
 <body>
   <header class="header">   
-    <div class="header__contenedor">
-       <div class="header__marca">
-         <img src="../imagenes/logo.png" alt="Logo" class="header__marcaImg"/>
-       </div>   
-       <nav>
-            <a class="nav__enlace--sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
-            <ul class="nav__lista" id="sidebar">
-             <li><a class="nav__enlace" href="../index.html">Inicio</a></li>
-             <li><a class="nav__enlace" href="integrantes.html">Integrantes</a></li>
-             <li><a class="nav__enlace" href="discografia.html">Discografia</a></li>
-             <li><a class="nav__enlace" href="galeria.html">Galeria</a></li>
-             <li><a class="nav__enlace" href="contacto.html">Contacto</a></li>
-             <li><a class="nav__enlaceoculto" href="#"><i class="fas fa-times-circle"></i></a></li>
-            </ul>
-       </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header">
+      <div class="container-fluid">
+        <div class="header__marca">
+          <img src="../imagenes/logo.png" alt="Logo" class="header__marcaImg"/>
+        </div>
+        <button class="nav__enlace--sidebar navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav__enlace active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav__enlace active" aria-current="page" href="integrantes.html">Integrantes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav__enlace active" aria-current="page" href="discografia.html">Discografia</a></li>
+            </li>
+            <li class="nav-item">
+              <a class="nav__enlace active" aria-current="page" href="galeria.html">Galeria</a></li>
+            </li>
+            <li class="nav-item">
+              <a class="nav__enlace active" aria-current="page" href="contacto.html">Contacto</a></li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
     <!--Insertar contenido en multimedia-->
 
     <main>
-      <h1>¡Escuchalas!</h1>
-      <h2 class="separador__titulo">¡Aqui puedes escuchar cada uno de sus albums y shows!</h2>
+      <h1 class="titulo">¡Escuchalas!</h1>
+      <h2 class="titulo2 separador__titulo">¡Aqui puedes escuchar cada uno de sus albums y shows!</h2>
 
       <section class="multimedia">
 
@@ -133,5 +148,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

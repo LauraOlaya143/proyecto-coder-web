@@ -10,10 +10,9 @@ body {
     color: rgb(252, 142, 184);
     font-family: 'EB Garamond', serif;
     font-family: 'Merriweather', serif;
-    line-height: 2em;
 }
 
-h1 {
+.titulo {
     text-align: center;
     font-size: 6.5em;
     line-height: 1.2em;
@@ -25,19 +24,16 @@ h1 {
     animation-duration: 3s;
     animation-name: titulo;
     animation-iteration-count: 1;
-
 }
 
-
-
-h2 {
+.titulo2 {
     text-align: center;
     font-size: 3em;
     line-height: 1.2em;
     width: 90%;
     height: 50px;
+    padding-bottom: 5rem;
     padding-top: 3rem;
-    padding-bottom: 3rem;
     margin: 0 auto;
     animation-duration: 3s;
     animation-name: titulo;
@@ -107,6 +103,7 @@ div h3 {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    margin: 50px;
     transition: all 0.5s;
     transform: scale(2,1)
 
@@ -134,9 +131,16 @@ div h3 {
     display: none;
 }
 
+.main__contenedor2 {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
 .main__contenedor {
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 30px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -151,6 +155,18 @@ div h3 {
     font-size: 2em;
     text-align: justify;
     line-height: 1.2em;
+}
+
+
+.parrafo2 {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 1.8em;
+    text-align: justify;
+    line-height: 1.2em;
+    background-color: #ff5ca03b;
+    border-radius: 50px;
 }
 
 .parrafo__2 {
@@ -188,7 +204,7 @@ div h3 {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
-    height: 350px;
+    height: 400px;
     padding: 30px;
     margin: 30px;
 }
@@ -200,7 +216,7 @@ div h3 {
 }
 
 .cajaTexto__img2 {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     border-radius: 40px;
 }
@@ -372,6 +388,16 @@ div h3 {
     padding: 1rem;
     max-width:1024px;
 }
+
+.caja3 {
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 1rem;
+    max-width:800px;
+}
+
 .cajaGrid {
     display:grid;
     grid-template-areas: 
@@ -397,7 +423,7 @@ div h3 {
 
 .cajagrid__img {
     width: 100%;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 .cajagrid__img--2 {
@@ -436,6 +462,10 @@ div#fotocuatro {
     margin: 20px;
 }
 
+.cajaGrid2--2 {
+    margin-top: 70px;
+}
+
 div#titulo1 {
     grid-area: titulo1;
 }
@@ -463,6 +493,12 @@ div#firma {
 
 .cajagrid__img3 {
     width: 80%;
+}
+
+.acordeon {
+    background-color: rgb(26, 19, 19);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(47,36,39,1) 100%);
+    color:rgb(255, 172, 190);
 }
 
 .footer {
@@ -511,12 +547,12 @@ div#firma {
 /* inicio de media querie para tableta */
 
 @media screen and (max-width: 1024px) {
-    h2 { 
+    .titulo2 { 
         height: 30px;
         width: 600px;
     }
 
-    h1 {
+    .titulo  {
         height: 20px;
         width: 100%;
         padding-bottom: 6rem;
@@ -541,7 +577,7 @@ div#firma {
     }
 
     .header__marca {
-        height: 50px;
+        height: 70px;
         margin: 10px;
         margin-right: 24px;
         
@@ -574,9 +610,9 @@ div#firma {
     }
 
     .nav__enlace--sidebar {
-        color: rgb(255, 172, 190);
         font-weight: bold;
-        background-color: rgb(26, 25, 25);
+        background-color: rgba(167, 0, 97, 0.308);
+        color:black;
         font-size: 1.2rem;
         border-radius: 3px;
         padding: 0.4rem 0.8rem;
@@ -584,18 +620,22 @@ div#firma {
     }
 
     .nav__enlace {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+        margin: 10px;
     }
 
     .nav__enlace:hover {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     .nav__enlaceoculto {
         display: block;
     }
 
-    
+    .nav-item {
+        margin: 10px;
+    }
+
     .nav__lista {
         display: flex;
         gap: 4rem;
@@ -605,6 +645,10 @@ div#firma {
 
     .main__contenedor {
         flex-direction: column;
+    }
+
+    .main__contenedor2 {
+        margin-top: 17px;
     }
 
     .main__img {
@@ -737,14 +781,14 @@ div#firma {
 
 @media screen and (max-width: 600px) {
     
-    h1 {
+    .titulo {
         font-size: 40px;
         width: 100%;
         margin: 0 auto;
         padding-bottom: 10px;
     }
 
-    h2 {
+    .titulo2 {
         font-size: 30px;
         margin: 0 auto;
         width: 90%;
@@ -773,16 +817,24 @@ div#firma {
         max-width: 220px;
     }
 
+    .main__contenedor2 {
+        margin-top: 0px;
+    }
+
     .separador__titulo {
         margin: 0 auto;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         margin-right: 10px;
     }
 
     .parrafo {
         margin-top: 30px;
         font-size: 20px;
-        width: 240px
+        width: 300px
+    }
+
+    .parrafo2 {
+        font-size: 1.4rem;
     }
 
     .main__img {
@@ -803,9 +855,9 @@ div#firma {
     .caja {
         border-radius: 6px;
         margin: 0 auto;
-        margin-top: 100px;
+        margin-top: 150px;
         margin-bottom: 20px;
-        max-width: 250px;
+        max-width: 300px;
     }
     
     .caja2 {
@@ -825,8 +877,8 @@ div#firma {
     }   
 
     .cajagrid__items {
-        margin: 1px;
-        padding: 1px;
+        margin: 0px;
+        padding: 2px;
         display: flex;
         justify-content:center;
         align-items: center;
@@ -834,6 +886,7 @@ div#firma {
 
     .cajagrid__img {
         width: 100%;
+        border-radius: 20px;
         
     }
 
@@ -862,10 +915,18 @@ div#firma {
         width: 200px;
     }
 
+    .parrafo2 {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
     .parrafo__2 {
         width: 230px;
         margin-left: 1px;
         font-size: 15px;
+    }
+
+    .galeriaoculta {
+        display: none;
     }
 
     .footer {
