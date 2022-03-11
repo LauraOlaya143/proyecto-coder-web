@@ -203,7 +203,7 @@ div h3 {
 .cajaTexto {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1100px;
     height: 400px;
     padding: 30px;
     margin: 30px;
@@ -381,21 +381,23 @@ div h3 {
 
 .caja2 {
     background-color: rgba(255, 140, 188, 0.123);
-    border-radius: 6px;
+    border-radius: 40px;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 20px;
     padding: 1rem;
-    max-width:1024px;
+    max-width:1004px;
 }
 
 .caja3 {
+    background-color: rgba(255, 140, 188, 0.123);
     border-radius: 6px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: px;
     margin-bottom: 20px;
     padding: 1rem;
-    max-width:800px;
+    max-width:1024px;
+    display: none
 }
 
 .cajaGrid {
@@ -486,9 +488,9 @@ div#firma {
 
 .cajagrid__items2 {
     margin: 0 auto;
-    display: flex;
     justify-content:center;
     align-items: center;
+    width: 400px;
 }
 
 .cajagrid__img3 {
@@ -614,7 +616,8 @@ div#firma {
         background-color: rgba(167, 0, 97, 0.308);
         color:black;
         font-size: 1.2rem;
-        border-radius: 3px;
+        border: 3px rgba(24, 22, 22, 0.801) solid;
+        border-radius: 10px;
         padding: 0.4rem 0.8rem;
         display: inline-block;
     }
@@ -656,6 +659,13 @@ div#firma {
         border-radius: 40px;
     }
 
+    .parrafo__2 {
+        width: 520px;
+        margin: 0 auto;
+        text-align: justify;
+        line-height: 1.5em;
+    }
+
     .caja2 {
         margin-top: 120px;
         margin-bottom: 20px;
@@ -679,14 +689,19 @@ div#firma {
     }
 
     .caja2 {
-        border-radius: 6px;
+        border-radius: 20px;
         margin: 0 auto;
-        margin-top: 110px;
+        margin-top: 100px;
         margin-bottom: 20px;
-        padding: 1rem;
+        padding: 1px;
         max-width:600px;
-        height: 800px;
+        height: 720px;
     }
+
+    .caja2__2 {
+        height: 780px;
+    }
+
 
     .cajaImg2 {
         margin-left: 120px;
@@ -728,6 +743,7 @@ div#firma {
         height: 0 auto;
         padding: 3px;
         margin: 3px;
+        margin-top: 20px;
     }
 
     .parrafo__2 {
@@ -743,6 +759,10 @@ div#firma {
     }
 
     .ocultarMobile {
+        display: none;
+    }
+
+    .ocultarMobile2 {
         display: none;
     }
 
@@ -793,6 +813,26 @@ div#firma {
         margin: 0 auto;
         width: 90%;
         padding-bottom: 2rem;
+    }
+
+    .titulo__3 {
+        padding-left: 20px;
+    }
+
+    .titulo__oculto {
+        display: none;
+    }
+
+    .titulo__oculto2 {
+        display: block;
+        color:rgb(255, 211, 229);
+        margin-bottom: 20px;
+    }
+
+
+    .ocultarMobile2 {
+        display: block;
+        margin-bottom: 30px;
     }
 
     div h2 {
@@ -861,8 +901,35 @@ div#firma {
     }
     
     .caja2 {
-        max-width: 250px;
+        max-width: 300px;
         margin-top: 120px;
+        border-radius:  40px;
+        height: 700px;
+    }
+
+    .caja2__2 {
+        height: 800px;
+    }
+
+    .cajaTexto {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 300px;
+        height: 0 auto;
+        padding: 30px;
+        margin: 3px;
+    }
+
+    .caja3 {
+        background-color: rgba(255, 140, 188, 0.123);
+        border-radius: 6px;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding: 1rem;
+        max-width:1024px;
+        display: block;
     }
 
     .cajaGrid {
@@ -905,7 +972,7 @@ div#firma {
     }
 
     .boton {
-        margin: 18px;
+        margin: 12px;
         width: 100px;
         height: 45px;
     }
