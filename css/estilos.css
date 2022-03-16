@@ -199,6 +199,10 @@ div h3 {
     display: none;
 }
 
+.titulo__oculto2 {
+    display: none;
+}
+
 
 .cajaTexto {
     display: flex;
@@ -369,6 +373,10 @@ div h3 {
     border: 4px solid rgb(255, 172, 190);
 }
 
+.ocultarMobile2 {
+    display: block;
+}
+
 .caja {
     background-color: rgba(255, 140, 188, 0.123);
     border-radius: 6px;
@@ -390,14 +398,13 @@ div h3 {
 }
 
 .caja3 {
-    background-color: rgba(255, 140, 188, 0.123);
     border-radius: 6px;
     margin: 0 auto;
     margin-top: px;
     margin-bottom: 20px;
     padding: 1rem;
     max-width:1024px;
-    display: none
+    display: block;
 }
 
 .cajaGrid {
@@ -763,7 +770,7 @@ div#firma {
     }
 
     .ocultarMobile2 {
-        display: none;
+        display: block;
     }
 
     .cajaGrid2 {
@@ -993,6 +1000,10 @@ div#firma {
     }
 
     .galeriaoculta {
+        display: none;
+    }
+
+    .ocultarMobile2 {
         display: none;
     }
 
