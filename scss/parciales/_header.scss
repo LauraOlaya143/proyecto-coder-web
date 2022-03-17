@@ -1,0 +1,46 @@
+.header {
+    background-color: rgb(255, 172, 190);
+    background: linear-gradient(to right, rgb(255, 164, 184), #ffced4);
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.507);
+    
+    &__contenedor {
+        max-width: 1150px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__marca {
+        height: 100px;
+        padding: 1rem;
+    }
+
+    &__marcaImg {
+        height: 100%;
+    }
+}
+
+.nav__enlace {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 50px;
+    transition: all 0.5s;
+    transform: scale(2,1);
+
+    &:hover {
+        font-size: 1em;
+        background-color: black;
+        color:rgb(255, 172, 190);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    &--sidebar {
+        display: none;
+    }
+
+}

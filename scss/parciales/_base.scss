@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::selection { 
+    background-color:rgb(252, 142, 184);
+    color: black;
+}
+
+body {
+    background-color: rgb(24, 22, 22);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(47,36,39,1) 100%);
+    color: rgb(252, 142, 184);
+    font-family: 'EB Garamond', serif;
+    font-family: 'Merriweather', serif;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 6.5em;
+    line-height: 1.2em;
+    width: 60%;
+    height: 30px;
+    padding-bottom: 6rem;
+    padding-top: 2rem;
+    margin: 0 auto;
+    animation-duration: 3s;
+    animation-name: titulo;
+    animation-iteration-count: 1;
+}
+
+.titulo2 {
+    text-align: center;
+    font-size: 3em;
+    line-height: 1.2em;
+    width: 90%;
+    height: 50px;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+    margin: 0 auto;
+    animation-duration: 3s;
+    animation-name: titulo;
+    animation-iteration-count: 1;
+}
+
+@keyframes titulo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+strong {
+    color: rgb(255, 211, 229);
+}
+
+div h3 {
+    width: 600px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    text-align: justify;
+    animation-duration: 3s;
+    animation-name: titulo;
+    animation-iteration-count: 1;
+}
