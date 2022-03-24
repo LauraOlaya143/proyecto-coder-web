@@ -5,7 +5,7 @@
 
 ::selection { 
     background-color:rgb(252, 142, 184);
-    color: black;
+    color: rgb(124, 0, 58);
 }
 
 body {
@@ -51,6 +51,11 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+@mixin sizes ($width, $height) {
+    height: $height;
+    width: $width;
 }
 
 ul {

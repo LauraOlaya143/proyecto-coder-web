@@ -4,7 +4,7 @@
 
 ::selection {
   background-color: #fc8eb8;
-  color: black; }
+  color: #7c003a; }
 
 body {
   background-color: #181616;
@@ -60,7 +60,7 @@ div h3 {
   animation-name: titulo;
   animation-iteration-count: 1; }
 
-.header {
+.header, .footer {
   background-color: #ffacbe;
   background: linear-gradient(to right, #ffa4b8, #ffced4);
   color: black;
@@ -143,7 +143,7 @@ div h3 {
     padding-bottom: 20px; }
 
 .titulo__mobile {
-  color: #ffd3e5; }
+  color: #ffe2ee; }
 
 .titulo__oculto {
   display: none; }
@@ -214,8 +214,8 @@ div h3 {
   text-align: justify;
   font-size: 2em;
   line-height: 1.5em;
-  width: 90%;
   height: 50px;
+  width: 90%;
   padding: 3rem;
   margin: 0 auto; }
   .subtitulo__color {
@@ -225,10 +225,10 @@ div h3 {
 .formulario {
   display: flex;
   flex-direction: column;
-  width: 200px;
   height: 60px;
+  width: 200px;
   font-size: 1.3em;
-  color: #ffb7d9;
+  color: #ffacbe;
   transition: all 1s; }
   .formulario:hover {
     width: 220px; }
@@ -236,7 +236,7 @@ div h3 {
     display: flex;
     flex-direction: column;
     font-size: 1.3em;
-    color: #ffb7d9; }
+    color: #ffacbe; }
   .formulario__caja {
     margin: 0 auto;
     margin-top: 40px;
@@ -256,8 +256,8 @@ div h3 {
 
 .boton {
   margin: 25px;
-  width: 100px;
   height: 45px;
+  width: 100px;
   color: black;
   font-weight: bold;
   font-family: 'Merriweather', serif;
@@ -274,11 +274,11 @@ div h3 {
 
 .ocultarMobile {
   display: block;
-  color: #ffd3e5; }
+  color: #ffe2ee; }
 
 .ocultarMobile2 {
   display: block;
-  color: #ffd3e5; }
+  color: #ffe2ee; }
 
 .caja {
   background-color: rgba(255, 140, 188, 0.123);
@@ -308,7 +308,7 @@ div h3 {
   display: block; }
 
 .grid > * {
-  border: #fc8eb8 1px solid; }
+  border: #ffacbe 1px solid; }
 
 .cajaGrid {
   display: grid;
@@ -326,8 +326,8 @@ div h3 {
     width: 100%;
     border-radius: 50px; }
     .cajaGrid__img--2 {
-      width: 80%;
       height: 90%;
+      width: 80%;
       border-radius: 30px; }
   .cajaGrid__img2 {
     width: 100%; }
@@ -358,32 +358,35 @@ div#fotocuatro {
   background: linear-gradient(0deg, black 0%, #2f2427 100%);
   color: #ffacbe; }
 
-.footer {
-  background-color: #ffacbe;
-  background: linear-gradient(to right, #ffa4b8, #ffdde1);
-  color: black;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.507); }
-  .footer__contenedor {
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  .footer__marca {
-    height: 150px;
-    width: 200px; }
-  .footer__marcaImg {
-    height: 100%; }
-  .footer__creditos {
-    display: flex;
-    gap: 2rem; }
-  .footer__lista {
-    display: flex;
-    gap: 2rem;
-    align-items: center; }
-  .footer__listaItems {
-    width: 75px; }
+.accordion-button:hover {
+  color: #ffe2ee; }
+
+.footer__contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.footer__marca {
+  height: 150px;
+  width: 200px; }
+
+.footer__marcaImg {
+  height: 100%; }
+
+.footer__creditos {
+  display: flex;
+  gap: 2rem; }
+
+.footer__lista {
+  display: flex;
+  gap: 2rem;
+  align-items: center; }
+
+.footer__listaItems {
+  width: 75px; }
 
 /* inicio de media querie para tableta */
 @media screen and (max-width: 1024px) {
@@ -398,7 +401,7 @@ div#fotocuatro {
     font-size: 6em; }
   div h3 {
     margin-top: 80px; }
-  .header {
+  .header, .footer {
     justify-content: flex-start;
     align-items: center; }
     .header__contenedor {
@@ -496,7 +499,7 @@ div#fotocuatro {
     text-align: justify;
     line-height: 1.5em; }
   .titulo__oculto {
-    color: #ffd3e5;
+    color: #ffe2ee;
     display: block; }
   .ocultarMobile {
     display: none; }
@@ -538,13 +541,13 @@ div#fotocuatro {
     display: none; }
     .titulo__oculto2 {
       display: block;
-      color: #ffd3e5;
+      color: #ffe2ee;
       margin-bottom: 20px; }
   div h2 {
     width: 230px; }
   div h3 {
     width: 270px; }
-  .header {
+  .header, .footer {
     width: 100%; }
     .header__contenedor {
       flex-direction: row;
@@ -633,7 +636,7 @@ div#fotocuatro {
     margin-left: 20px;
     width: 200px; }
   .parrafo2 {
-    background-color: rgba(0, 0, 0, 0); }
+    background-color: black; }
   .parrafo__2 {
     width: 230px;
     margin-left: 1px;
