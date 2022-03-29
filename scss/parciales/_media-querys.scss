@@ -44,8 +44,8 @@
             background-color: rgba(167, 0, 97, 0.308);
             color: $mivariable2;
             font-size: 1.2rem;
-            border: 3px rgba(24, 22, 22, 0.801) solid;
-            border-radius: 10px;
+            border: 3px $mivariable2 solid;
+            border-radius: 15px;
             padding: 0.4rem 0.8rem;
             display: inline-block;
         }
@@ -104,11 +104,15 @@
     .caja2 {
         border-radius: 20px;
         margin: 0 auto;
-        margin-top: 100px;
+        margin-top: 80px;
         margin-bottom: 20px;
         padding: 1px;
         max-width:600px;
         height: 720px;
+
+        &--2 {
+            margin-top: 150px;
+        }
 
         &__2 {
            height: 780px;
@@ -156,6 +160,12 @@
         padding: 3px;
         margin: 3px;
         margin-top: 20px;
+    }
+
+    .parrafo2 {
+        width: 100%;
+        height: 180px;
+        border-radius: 50px;
     }
 
     .parrafo__2 {
@@ -214,10 +224,14 @@
 @media screen and (max-width: 600px) {
     
     .titulo {
-        font-size: 40px;
+        font-size: 42px;
         width: 100%;
         margin: 0 auto;
         padding-bottom: 10px;
+
+        &--2 {
+            padding-left: 15px;
+        }
     }
 
     .titulo2 {
@@ -287,9 +301,9 @@
     }
 
     .multimedia {
-        width: 320px;
-        padding-top: 60px;
-        padding-left: 10px;
+        width: 100%;
+        padding-top: 80px;
+        padding-left: 15px;
         margin: 0 auto;
         justify-content:center;
 
@@ -301,19 +315,27 @@
     .caja {
         border-radius: 6px;
         margin: 0 auto;
-        margin-top: 150px;
+        margin-top: 80px;
         margin-bottom: 20px;
         max-width: 300px;
+
+        &--2 {
+            margin-top: 150px;
+        }
     }
     
     .caja2 {
         max-width: 300px;
-        margin-top: 120px;
+        margin-top: 50px;
         border-radius:  40px;
-        height: 700px;
+        height: 720px;
+
+        &--2 {
+            margin-top: 150px;
+        }
 
         &__2 {
-            height: 800px;
+            height: 820px;
         }
     }
 
@@ -358,6 +380,7 @@
 
         &__img {
             width: 100%;
+            height: 80%;
             border-radius: 30px;
 
             &--2 {
@@ -388,7 +411,11 @@
     }
 
     .parrafo2 {
-        background-color: $mivariable2;
+        margin-top: 20px;
+        height: 150px;
+        color: rgb(252, 142, 184);
+        background-color: rgba(255, 172, 190, 0);
+        background: rgba(0, 0, 0, 0)
     }
 
     .parrafo__2 {

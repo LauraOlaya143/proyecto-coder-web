@@ -38,8 +38,11 @@
     font-size: 1.8em;
     text-align: justify;
     line-height: 1.2em;
-    background-color: rgba(255, 92, 160, 0.231);
-    border-radius: 50px;
+    font-weight: bold;
+    color: $mivariable2;
+    background-color: $mivariable1;
+    background: linear-gradient(to right, rgb(255, 121, 172), #ffced4);  
+    border-radius: 20px;
 }
 
 .main__img {
@@ -141,6 +144,7 @@
     flex-wrap: wrap;
     margin: 50px;
     padding: 30px;
+    padding-left: 70px;
 
     &__separador {
         display: flex;
@@ -251,7 +255,7 @@
     background-color: $mivariable4;
     border-radius: 40px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 20px;
     padding: 1rem;
     max-width:1004px;
