@@ -212,8 +212,7 @@ div h3 {
   display: flex;
   flex-wrap: wrap;
   margin: 50px;
-  padding: 30px;
-  padding-left: 35px; }
+  padding: 30px; }
   .multimedia__separador {
     display: flex;
     flex-direction: column;
