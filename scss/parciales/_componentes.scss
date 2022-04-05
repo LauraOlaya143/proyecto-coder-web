@@ -142,7 +142,7 @@
 .multimedia {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px;
+    margin: 54px;
     padding: 30px;
 
     &__separador {
@@ -339,6 +339,6 @@ div#fotocuatro {
     color: $mivariable1;
 }
 
-.accordion-button:hover {
+.acordeon:hover {
     color: $mivariable3;
 }

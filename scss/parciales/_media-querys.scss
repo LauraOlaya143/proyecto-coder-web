@@ -79,11 +79,15 @@
         border-radius: 40px;
     }
 
-    .parrafo__2 {
-        width: 520px;
-        margin: 0 auto;
-        text-align: justify;
-        line-height: 1.5em;
+    .parrafo {
+        width: 600px;
+
+        &__2 {
+            width: 520px;
+            margin: 0 auto;
+            text-align: justify;
+            line-height: 1.5em;
+        }
     }
 
     .multimedia {
@@ -91,6 +95,10 @@
         margin-top: 80px;
         padding: 10px;
         padding-top: 50px;
+
+        &__separador {
+            margin: 20px;
+        }
     }
 
     .caja {
@@ -433,6 +441,16 @@
         display: none;
     }
 
+    .accordion {
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+
+        &-button {
+            width: 300px;
+        }
+    }
+  
     .footer {
         width: 100%;
 
