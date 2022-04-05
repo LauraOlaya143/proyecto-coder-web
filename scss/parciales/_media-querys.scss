@@ -202,6 +202,10 @@
         display: none;
     }
 
+    .accordion-button {
+        font-size: 28px;
+    }
+
     .footer__contenedor {
         max-width: 1200px;
         display: flex;
@@ -449,6 +453,10 @@
         &-button {
             width: 300px;
         }
+    }
+
+    .accordion-button {
+        font-size: 20px;
     }
   
     .footer {

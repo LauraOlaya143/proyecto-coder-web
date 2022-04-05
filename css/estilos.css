@@ -133,6 +133,7 @@ div h3 {
   width: 100%;
   padding: 20px;
   margin: 0 auto;
+  margin-top: 30px;
   font-size: 1.8em;
   text-align: justify;
   line-height: 1.2em;
@@ -172,7 +173,6 @@ div h3 {
     width: 100%;
     margin: 0 auto;
     border-radius: 40px; }
-  
     .cajaTexto__img--2 {
       height: 270px; }
 
@@ -323,8 +323,7 @@ div h3 {
 
 .cajaGrid {
   display: grid;
-  grid-template-areas: "foto1 foto2"
- "foto3 foto4";
+  grid-template-areas: "foto1 foto2" "foto3 foto4";
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 500px);
   margin: 0 auto; }
@@ -373,6 +372,9 @@ div#fotocuatro {
 .acordeon:hover {
   color: #ffe2ee; }
 
+.accordion-button {
+  font-size: 28px; }
+
 .footer__contenedor {
   max-width: 1200px;
   margin: 0 auto;
@@ -399,7 +401,13 @@ div#fotocuatro {
   align-items: center; }
 
 .footer__listaItems {
-  width: 75px; }
+  font-size: 50px;
+  color: black;
+  transition: all 0.5s; }
+
+.footer__listaItems:hover {
+  color: #a2174d;
+  font-size: 55px; }
 
 /* inicio de media querie para tableta */
 @media screen and (max-width: 1024px) {
@@ -488,10 +496,7 @@ div#fotocuatro {
   .cajaImg2 {
     margin-left: 120px; }
   .cajaGrid {
-    grid-template-areas: "foto1"
- "foto2"
- "foto3"
- "foto4";
+    grid-template-areas: "foto1" "foto2" "foto3" "foto4";
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 550px);
     margin: 0 auto; }
@@ -534,6 +539,8 @@ div#fotocuatro {
       display: block; }
   .cajaGrid2 {
     display: none; }
+  .accordion-button {
+    font-size: 28px; }
   .footer__contenedor {
     max-width: 1200px;
     display: flex;
@@ -640,10 +647,7 @@ div#fotocuatro {
     padding: 30px;
     margin: 3px; }
   .cajaGrid {
-    grid-template-areas: "foto1"
- "foto2"
- "foto3"
- "foto4";
+    grid-template-areas: "foto1" "foto2" "foto3" "foto4";
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 300px);
     margin: 0 auto; }
@@ -692,6 +696,8 @@ div#fotocuatro {
     margin-bottom: 10px; }
     .accordion-button {
       width: 300px; }
+  .accordion-button {
+    font-size: 20px; }
   .footer {
     width: 100%; }
     .footer__contenedor {

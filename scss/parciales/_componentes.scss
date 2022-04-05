@@ -35,6 +35,7 @@
     width: 100%;
     padding: 20px;
     margin: 0 auto;
+    margin-top: 30px;
     font-size: 1.8em;
     text-align: justify;
     line-height: 1.2em;
@@ -341,4 +342,8 @@ div#fotocuatro {
 
 .acordeon:hover {
     color: $mivariable3;
+}
+
+.accordion-button {
+    font-size: 28px;
 }

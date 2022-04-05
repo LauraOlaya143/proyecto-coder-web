@@ -32,6 +32,13 @@
     }
 
     &__listaItems {
-        width: 75px;
+        font-size: 50px;
+        color: $mivariable2;
+        transition: all 0.5s;
+    }
+
+    &__listaItems:hover {
+        color:#a2174d;
+        font-size: 55px;
     }
 }
